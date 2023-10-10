@@ -11,7 +11,7 @@ type ImageProps = { id: number };
 const Image = ({ id }: ImageProps) => (
   <div className={styles.wrapper}>
     <NextImage
-      src={`https://picsum.photos/id/${id}/2000/200`}
+      src={`https://picsum.photos/id/${id}/2000/2000`}
       alt="Test"
       fill
       style={{ objectFit: "cover" }}
@@ -56,6 +56,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
+        next 13.5.1
         {view === "1" && <View1></View1>}
         {view === "2" && <View2></View2>}
       </main>
